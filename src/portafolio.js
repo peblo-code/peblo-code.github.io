@@ -49,7 +49,12 @@ function Portafolio(props) {
     return (
         <section id="portafolio" className="portfolio">
             <div className="container">
-                <h2>{props.text}</h2>
+                <div className="info">
+                    <h2>{props.text}</h2>
+                    <div className="react-info">
+                        <h2 className="info-h2">Powered by React</h2> <img src="https://reactscript.com/wp-content/uploads/2016/06/React-Components-For-The-Web-Animations-API.gif"/>
+                    </div>
+                </div>
                 {
                     articlePortafolioList.map((articlePortafolioList) => <ArticlePortafolio key={articlePortafolioList.id} {...articlePortafolioList} />)
                 }
