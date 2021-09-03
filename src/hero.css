@@ -10,4 +10,25 @@
 .hero-image {
     object-fit: cover;
 }
-  
+
+@media screen and (max-width: 1024px){
+  .hero {
+      height: auto;
+      position: relative;
+      overflow: hidden;
+      padding: 2em;
+  }
+  .hero-image {
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+  }
+  h1 {
+      font-size: 2em;
+      z-index: 2;
+  }
+}
