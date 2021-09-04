@@ -49,3 +49,53 @@
 .project-imageContainer img {
     max-width: 100%;
 }
+
+@media screen and (max-width: 767px) {
+    .portfolio {
+        padding: 5px;
+    }
+
+    .project {
+        display: block;
+    }
+
+    .project-imageContainer {
+        text-align: center;
+        width: auto;
+    }
+
+    .project-details{
+        width: auto;
+    }
+
+    .project-course, .project-date, .project-url {
+        margin: .4em 0;
+    }
+
+    .project-title {
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+
+    .project-url {
+        font-size: 1em;
+    }
+
+    .project-course {
+        font-size: .7em;
+    }
+
+    .project-date {
+        font-size: 1em;
+    }
+    
+    .project-description {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-details {
+        font-size: 14px;
+    }
+}

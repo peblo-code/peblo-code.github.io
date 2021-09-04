@@ -2,10 +2,11 @@ import React from 'react';
 import './header.css'
 import BurgerMenu from './burgerMenu';
 
+
 function Header() {
     return (
         <>
-            {/* <i className="icon-menu burger-button" id="burger-menu"></i> */}
+            <i className="icon-menu burger-button" id="burger-menu" onClick={BurgerMenu} /> 
             <header className="header">
                 <div className="container">
                     <figure className="logo">
@@ -26,7 +27,9 @@ function Header() {
                     </nav>
                 </div>
             </header>
+            
         </>
     )
 }
+
 export default Header;
