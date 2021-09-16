@@ -1,5 +1,5 @@
 .portfolio{
-    background-color: #FAFAFA;
+    background-color: transparent;
     padding: 20px; 
 }
 
@@ -19,4 +19,13 @@
     justify-content: space-around;
     align-items: center;
     width: 18em;
+}
+
+@media screen and (max-width: 767px){
+    .first-title {
+        font-size: 1.2em;
+        margin: .2em 0;
+        text-align: end;
+        width: 100%;
+    }
 }

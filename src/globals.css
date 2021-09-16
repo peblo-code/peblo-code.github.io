@@ -59,9 +59,27 @@ valores*/
   content: "\e901";
   font-size: 50px;
 }
+
+:root {
+  --hTitle: #026fff;
+  --background: white;
+  --textColor: black;
+  --borderColor: gray;
+  --projectColor: white;
+  --eventColor: #f4fbff;
+  --eventDetailColor: #101010;
+  --switch: #5f616d;
+  --switchSpinner: white;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
+}
+
+main {
+  background-color: var(--background);
+  color: var(--textColor);
 }
 
 h1,
@@ -87,11 +105,11 @@ h1 {
 }
 
 h1 strong {
-  color: #026fff;
+  color: var(--hTitle);
 }
 
 h2{
-  color: #026fff;
+  color: var(--hTitle);
   text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
@@ -110,22 +128,36 @@ h2{
   flex-wrap: inherit; 
 }
 
+.project {
+  border-color: red;
+}
+
+.is-light-mode {
+  --textColor: black;
+  --background: #FAFAFA;
+  --borderColor: gray;
+  --projectColor: white;
+  --eventColor: #f4fbff;
+  --eventDetailColor: white;
+  --switch: #5f616d;
+  --switchSpinner: white;
+}
+
+.is-dark-mode {
+  --textColor: white;
+  --background: #464646;
+  --borderColor: black;
+  --projectColor: #232323;
+  --eventColor: #232323;
+  --eventDetailColor: #101010;
+  --switchSpinner: #282943;
+  --switch: linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
+}
+
 @media screen and (max-width: 767px) {
   h2 {
       font-size: 1.2em;
       margin: .2em 0;
-  }
-}
-
-
-@media screen and (max-width: 480px){
-  h1 {
-      font-size: 1.5em;
-  }
-}
-
-@media screen and (max-width: 320px){
-  h1{
-      font-size: 1.2em;
+      max-width: 100%;
   }
 }

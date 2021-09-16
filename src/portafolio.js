@@ -50,7 +50,8 @@ function Portafolio(props) {
         <section id="portafolio" className="portfolio">
             <div className="container">
                 <div className="info">
-                    <h2>{props.text}</h2>
+                    {props.children}
+                    <h2 className="first-title">{props.text}</h2>
                 </div>
                 {
                     articlePortafolioList.map((articlePortafolioList) => <ArticlePortafolio key={articlePortafolioList.id} {...articlePortafolioList} />)

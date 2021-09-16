@@ -38,3 +38,15 @@
         padding: 2em 1em;
     }
 }
+
+@media screen and (max-width: 480px){
+    h1 {
+        font-size: 1.5em;
+    }
+  }
+  
+@media screen and (max-width: 320px){
+    h1{
+        font-size: 1.2em;
+    }
+  }

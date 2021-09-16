@@ -6,12 +6,12 @@
     /*border-color: red;
     border-width: 15px;
     border-style: solid;*/
-    border: 1px solid gray;
+    border: 1px solid var(--borderColor);
     border-radius: 10px;
     /* margin: 10px;*/
     margin-bottom: 15px;
     padding: 20px;
-    background: white; 
+    background: var(--projectColor); 
     display: flex;
     align-items: center;
     justify-content: space-between;
