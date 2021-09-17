@@ -2,7 +2,7 @@
   "name": "peblocode.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://zacksten.github.io/peblocode.github.io",
+  "homepage": "http://peblo-code.github.io/peblo-code.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
