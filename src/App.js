@@ -11,25 +11,27 @@ import Contact from './contact';
 import Footer from './footer';
 
 function App() {
+  //logica de DarkMode
   const [darkMode, setDarkMode] = useState(false);
   const [checked, setChecked] = useState(false);
 
   const mainClass = darkMode ? 'is-dark-mode' : 'is-light-mode'
  
   
-function changeMedia(mq) {
-  console.log(mq)
-  setDarkMode(mq.matches);
-  setChecked(mq.matches);
-}
-
-useEffect(()=> {
-    const mq = window.matchMedia('(prefers-color-scheme: dark)');
-    mq.addEventListener("change", changeMedia);
+  function changeMedia(mq) {
+    console.log(mq)
     setDarkMode(mq.matches);
     setChecked(mq.matches);
-},[])
+  }
 
+  useEffect(()=> {
+      const mq = window.matchMedia('(prefers-color-scheme: dark)');
+      mq.addEventListener("change", changeMedia);
+      setDarkMode(mq.matches);
+      setChecked(mq.matches);
+  },[])
+
+  //render
   return (
   <main className={mainClass}>
     <Head />
