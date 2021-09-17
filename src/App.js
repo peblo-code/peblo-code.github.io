@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import React, { useState,useEffect } from 'react';
 import './globals.css';
 import Head from './head';
@@ -30,6 +29,7 @@ function App() {
       setDarkMode(mq.matches);
       setChecked(mq.matches);
   },[])
+
 
   //render
   return (
