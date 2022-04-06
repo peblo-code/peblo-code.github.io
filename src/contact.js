@@ -12,7 +12,7 @@ var contactLinksList = [
         className: "icon-facebook",
     },
     {
-        href: "https://github.com/ZackSten",
+        href: "https://github.com/peblo-code",
         className: "icon-github",
     },
     {
